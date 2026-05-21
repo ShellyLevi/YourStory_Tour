@@ -158,26 +158,26 @@ const icons = [MapPin, Laugh, Camera, Heart];
 
 function LangToggle({ lang, setLang }) {
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center bg-white/90 backdrop-blur-md rounded-full shadow-xl border border-gray-200 overflow-hidden">
+    <div className="fixed top-3 right-3 z-50 flex items-center bg-white/90 backdrop-blur-md rounded-full shadow-xl border border-gray-200 overflow-hidden">
       <button
         onClick={() => setLang("he")}
-        className={`px-5 py-2.5 text-base font-semibold transition-all duration-300 ${
+        className={`px-3 py-1.5 text-sm font-semibold transition-all duration-300 ${
           lang === "he"
             ? "bg-orange-500 text-white"
             : "text-gray-500 hover:text-gray-800"
         }`}
       >
-        🇮🇱 עברית
+        🇮🇱 עב
       </button>
       <button
         onClick={() => setLang("en")}
-        className={`px-5 py-2.5 text-base font-semibold transition-all duration-300 ${
+        className={`px-3 py-1.5 text-sm font-semibold transition-all duration-300 ${
           lang === "en"
             ? "bg-orange-500 text-white"
             : "text-gray-500 hover:text-gray-800"
         }`}
       >
-        🇬🇧 English
+        🇬🇧 EN
       </button>
     </div>
   );
